@@ -1,0 +1,170 @@
+/* root */
+:root {
+  --red-clr: hsl(0, 78%, 62%);
+  --cyan-clr: hsl(180, 62%, 55%);
+  --orange-clr: hsl(34, 97%, 64%);
+  --blue-clr: hsl(212, 86%, 64%);
+  --dark-clr: hsl(234, 12%, 34%);
+  --gray-clr: hsl(229, 6%, 66%);
+  --light-clr: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  background-color: var(--light-clr);
+}
+
+
+/* styling component */
+
+
+main {
+  min-height: 100vh;
+  margin: auto;
+  max-width: 80%;
+}
+
+main header {
+  text-align: center;
+  margin: 5em 0;
+  color: var(--dark-clr);
+}
+
+main header .light-font {
+  font-weight: 200;
+}
+
+main header h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+main header p {
+  font-weight: 400;
+  color: var(--gray-clr);
+  line-height: 1.7em;
+  padding: 2em 0 0 0;
+}
+
+section .cards {
+  position: relative;
+}
+
+
+section .card {
+  background-color: #fff;
+  padding: 1.8em;
+  border-radius: .4em;
+  box-shadow: 5px 10px 20px hsl(231, 11%, 87%);
+  margin-bottom: 2em;
+  position: relative;
+  overflow: hidden;
+}
+
+section .card:first-child {
+  border-top: 4px solid var(--cyan-clr);
+
+}
+
+section .card:nth-child(2) {
+  border-top: 4px solid var(--red-clr);
+}
+
+section .card:nth-child(3) {
+  border-top: 4px solid var(--orange-clr);
+}
+
+section .card:last-child {
+  border-top: 4px solid var(--blue-clr);
+}
+
+section .card h3 {
+  color: var(--dark-clr);
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-bottom: .4em;
+}
+
+section .card p {
+  color: var(--gray-clr);
+  font-weight: 400;
+  font-size: .8rem;
+  padding-bottom: 3em;
+  line-height: 1.7em;
+}
+
+section .card img {
+  height: 3.8em;
+  float: right;
+}
+
+
+/* responsive layout */
+
+@media (min-width:1440px) {
+  main header h2 {
+    font-size: 3rem;
+  }
+
+  main header p {
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    padding-top: 1em;
+  }
+
+
+
+  section .cards {
+    position: relative;
+    min-height: 40.625rem;
+
+  }
+
+  section .card {
+    max-width: 28%;
+    position: absolute;
+  }
+
+  section .card:first-child {
+    bottom: 40%;
+    left: 7%;
+  }
+
+  section .card:nth-child(2) {
+    right: 35%;
+  }
+
+  section .card:nth-child(3) {
+    right: 35%;
+
+    bottom: 20%;
+  }
+
+  section .card:last-child {
+    right: 5%;
+    bottom: 40%;
+  }
+
+
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
